@@ -9,7 +9,7 @@ on:
       video_path:
         description: 'Repository path when video_url is empty'
         required: false
-        default: 'reels/science_fair.mp4'
+        default: 'reels/dearwink_science_fair_reel.mp4'
         type: string
 jobs:
   upload:
