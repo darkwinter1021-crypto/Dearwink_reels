@@ -2,10 +2,15 @@ name: Upload Dearwink Reel
 on:
   workflow_dispatch:
     inputs:
+      video_url:
+        description: 'Public HTTPS direct MP4/MOV URL (leave empty for repository file)'
+        required: false
+        type: string
       video_path:
-        description: 'Repository path to the MP4/MOV file'
-        required: true
+        description: 'Repository path when video_url is empty'
+        required: false
         default: 'reels/science_fair.mp4'
+        type: string
 jobs:
   upload:
     runs-on: ubuntu-latest
@@ -17,8 +22,38 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests==2.32.3
+      - name: Download external video
+        if: ${{ inputs.video_url != '' }}
+        env:
+          VIDEO_URL: ${{ inputs.video_url }}
+        run: |
+          python - <<'PY'
+          import os, requests
+          from urllib.parse import urlparse
+          u=os.environ["VIDEO_URL"]
+          p=urlparse(u)
+          if p.scheme != "https" or not p.hostname:
+              raise ValueError("A direct HTTPS video URL is required")
+          with requests.get(u, stream=True, timeout=60, allow_redirects=True) as r:
+              r.raise_for_status()
+              if int(r.headers.get("content-length",0)) > 100_000_000:
+                  raise ValueError("Video exceeds 100 MB")
+              total=0
+              with open("incoming.mp4","wb") as f:
+                  for chunk in r.iter_content(1024*1024):
+                      total+=len(chunk)
+                      if total>100_000_000: raise ValueError("Video exceeds 100 MB")
+                      f.write(chunk)
+          PY
       - name: Upload to Cloudinary
         env:
           CLOUDINARY_CLOUD_NAME: qjh0dnin
           CLOUDINARY_UPLOAD_PRESET: dearwink_reels
-        run: python upload_cloudinary.py "${{ inputs.video_path }}"
+          VIDEO_URL: ${{ inputs.video_url }}
+          VIDEO_PATH: ${{ inputs.video_path }}
+        run: |
+          if [ -n "$VIDEO_URL" ]; then
+            python upload_cloudinary.py incoming.mp4
+          else
+            python upload_cloudinary.py "$VIDEO_PATH"
+          fi
