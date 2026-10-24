@@ -1,0 +1,61 @@
+name: Import pending Dearwink ImageGen image
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "pending/*.json"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Read manifest
+        id: manifest
+        run: |
+          set -euo pipefail
+          manifest="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^pending/.*\.json$' | head -n1)"
+          test -n "$manifest"
+          jq -e '.source_url and .sha256 and .destination' "$manifest" >/dev/null
+          echo "manifest=$manifest" >> "$GITHUB_OUTPUT"
+          echo "source_url=$(jq -r .source_url "$manifest")" >> "$GITHUB_OUTPUT"
+          echo "sha256=$(jq -r .sha256 "$manifest")" >> "$GITHUB_OUTPUT"
+          echo "destination=$(jq -r .destination "$manifest")" >> "$GITHUB_OUTPUT"
+      - name: Download and verify exact original
+        env:
+          SOURCE_URL: ${{ steps.manifest.outputs.source_url }}
+          EXPECTED_SHA256: ${{ steps.manifest.outputs.sha256 }}
+          DESTINATION: ${{ steps.manifest.outputs.destination }}
+        run: |
+          set -euo pipefail
+          case "$SOURCE_URL" in https://res.cloudinary.com/qjh0dnin/*) ;; *) echo "Unapproved source host"; exit 1;; esac
+          mkdir -p "$(dirname "$DESTINATION")"
+          curl --fail --silent --show-error --location --proto '=https' --max-time 120 "$SOURCE_URL" -o "$DESTINATION"
+          python - "$DESTINATION" "$EXPECTED_SHA256" <<'PY'
+          import hashlib, pathlib, sys
+          raw = pathlib.Path(sys.argv[1]).read_bytes()
+          if raw[:8] != b"\x89PNG\r\n\x1a\n":
+              raise SystemExit("Not a PNG")
+          actual = hashlib.sha256(raw).hexdigest()
+          print(f"SHA256={actual}")
+          if actual != sys.argv[2].lower():
+              raise SystemExit("Checksum mismatch")
+          PY
+      - name: Commit verified image
+        env:
+          DESTINATION: ${{ steps.manifest.outputs.destination }}
+          MANIFEST: ${{ steps.manifest.outputs.manifest }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$DESTINATION" "$MANIFEST"
+          git commit -m "Import verified Dearwink ImageGen asset"
+          git push origin HEAD:main
