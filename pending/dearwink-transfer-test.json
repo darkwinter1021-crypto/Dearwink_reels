@@ -1,0 +1,7 @@
+{
+  "source_url": "https://res.cloudinary.com/qjh0dnin/image/upload/v1792814842/dearwink_transfer_tests/mcpeibhcfesljpg7t6nj.png",
+  "sha256": "38cf1172abc7c00a167e5cf83c44855181237a5235d33b53feb39fe3965a5567",
+  "destination": "images/dearwink-transfer-test.png",
+  "generator": "ChatGPT built-in ImageGen",
+  "purpose": "Milestone 1 exact-byte transfer test"
+}
