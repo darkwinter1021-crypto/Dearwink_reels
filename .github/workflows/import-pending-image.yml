@@ -21,7 +21,7 @@ jobs:
         id: manifest
         run: |
           set -euo pipefail
-          manifest="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^pending/.*\.json$' | head -n1)"
+          manifest="$(git show --pretty="" --name-only "$GITHUB_SHA" | grep '^pending/.*\.json$' | head -n1)"
           test -n "$manifest"
           jq -e '.source_url and .sha256 and .destination' "$manifest" >/dev/null
           echo "manifest=$manifest" >> "$GITHUB_OUTPUT"
