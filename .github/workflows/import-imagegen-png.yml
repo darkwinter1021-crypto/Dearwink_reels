@@ -1,0 +1,66 @@
+name: Import Dearwink ImageGen PNG
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_url:
+        description: "Direct HTTPS URL of the exact ImageGen PNG"
+        required: true
+        type: string
+      expected_sha256:
+        description: "SHA-256 of the original ImageGen PNG"
+        required: true
+        type: string
+      destination:
+        description: "Repository destination path"
+        required: true
+        default: "images/dearwink-transfer-test.png"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Download and verify exact PNG
+        env:
+          SOURCE_URL: ${{ inputs.source_url }}
+          EXPECTED_SHA256: ${{ inputs.expected_sha256 }}
+          DESTINATION: ${{ inputs.destination }}
+        run: |
+          set -euo pipefail
+          case "$SOURCE_URL" in https://*) ;; *) echo "Only HTTPS source URLs are allowed"; exit 1;; esac
+          mkdir -p "$(dirname "$DESTINATION")"
+          curl --fail --silent --show-error --location --proto '=https' --max-time 120 "$SOURCE_URL" -o "$DESTINATION"
+          python - "$DESTINATION" "$EXPECTED_SHA256" <<'PY'
+          import hashlib, pathlib, sys
+          path = pathlib.Path(sys.argv[1])
+          expected = sys.argv[2].lower()
+          raw = path.read_bytes()
+          if raw[:8] != b"\x89PNG\r\n\x1a\n":
+              raise SystemExit("Downloaded file is not a PNG")
+          actual = hashlib.sha256(raw).hexdigest()
+          print(f"SHA256={actual}")
+          if actual != expected:
+              raise SystemExit("Checksum mismatch: refusing to commit")
+          PY
+      - name: Commit verified image
+        env:
+          DESTINATION: ${{ inputs.destination }}
+          EXPECTED_SHA256: ${{ inputs.expected_sha256 }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$DESTINATION"
+          if git diff --cached --quiet; then
+            echo "No change to commit"
+            exit 0
+          fi
+          git commit -m "Import verified Dearwink ImageGen PNG ($EXPECTED_SHA256)"
+          git push origin HEAD:main
