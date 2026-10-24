@@ -1,0 +1,26 @@
+name: Test Dearwink AI Image
+on:
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests==2.32.3
+      - name: Generate realistic Dearwink image with Workers AI
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python generate_cloudflare_image.py
+      - name: Save image for quality review
+        uses: actions/upload-artifact@v4
+        with:
+          name: dearwink-ai-test-image
+          path: output/dearwink_ai_test.png
+          if-no-files-found: error
+          retention-days: 7
