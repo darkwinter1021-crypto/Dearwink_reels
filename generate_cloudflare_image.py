@@ -5,7 +5,7 @@ import requests
 
 account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"].strip()
 token = os.environ["CLOUDFLARE_API_TOKEN"].strip()
-model = "@cf/black-forest-labs/flux-1-schnell"
+if not account_id:\n    raise RuntimeError("Missing CLOUDFLARE_ACCOUNT_ID GitHub Actions secret. Add your actual Cloudflare Account ID (not the API token).")\nif not token:\n    raise RuntimeError("Missing CLOUDFLARE_API_TOKEN GitHub Actions secret.")\nmodel = "@cf/black-forest-labs/flux-1-schnell"
 url = f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/{model}"
 prompt = (
     "Photorealistic absurd internet meme photograph, vertical 9:16 composition. "
