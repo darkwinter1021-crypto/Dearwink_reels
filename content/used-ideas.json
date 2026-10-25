@@ -8,7 +8,8 @@
     "museum lunchbox",
     "science fair fifth place",
     "express checkout sprint",
-    "saving a seat"
+    "saving a seat",
+    "skipping class"
   ],
   "posts": [
     {
@@ -35,6 +36,16 @@
       "instagram_media_id": "18230001193329474",
       "trend_note": "Applied the user-selected candid food-court reaction format: one exaggerated human action, visible bystanders, rough iPhone framing, and a single direct overlay.",
       "trend_evidence_type": "format observation from user-provided public Reel reference; no external clip or wording copied"
+    },
+    {
+      "concept": "skipping class",
+      "overlay": "bro said he was skipping class",
+      "posted_at": "2026-10-25T14:00:00+05:30",
+      "caption": "bro said he was skipping class 😭\n\napparently he heard the word “skipping” and decided attendance rules were no longer the point.\n\neverybody else is trying to get to class normally while he is turning the hallway into a cardio test with a backpack on.\n\nthe friend reaching for him has accepted that explaining this would take longer than just letting it happen.\n\nfictional AI-made scenario — no timetables were escaped by jump rope. #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1792917181/dearwink_reels/cf5tyywgt8jteb8v5hli.mp4",
+      "instagram_media_id": "18387031135239524",
+      "trend_note": "Applied fresh reaction-led short-form format signals as an original literal-interpretation gag: crowded candid hallway, one readable action, baffled nearby reaction, and a direct outlined overlay.",
+      "trend_evidence_type": "fresh multi-source public scan; no independently corroborated 24–48 hour breakout adopted"
     }
   ]
 }
