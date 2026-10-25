@@ -7,7 +7,8 @@
     "alien in school hallway",
     "museum lunchbox",
     "science fair fifth place",
-    "express checkout sprint"
+    "express checkout sprint",
+    "saving a seat"
   ],
   "posts": [
     {
@@ -24,6 +25,16 @@
       "instagram_media_id": "17914516638534704",
       "trend_note": "No verified 24–48 hour breakout was sufficiently compatible; retained the validated normal-setting plus literal-interpretation phone-photo format.",
       "trend_evidence_type": "fresh multi-source public scan; no qualifying breakout adopted"
+    },
+    {
+      "concept": "saving a seat",
+      "overlay": "bro said he was saving a seat",
+      "posted_at": "2026-10-25T09:00:00+05:30",
+      "caption": "bro said he was saving a seat 😭\n\nwe left him alone for literally ten seconds and he turned a cafeteria chair into a protected family heirloom.\n\napparently “save me a seat” means grab it, sprint away, and make eye contact with absolutely nobody while doing it.\n\nhis friend is still reaching for the chair like it has been taken in a hostage situation. nobody asked him to save the entire food court.\n\nfictional AI-made scenario — no chairs were relocated at lunch. #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1792899153/dearwink_reels/nypcaikijyetjiidt3jv.mp4",
+      "instagram_media_id": "18230001193329474",
+      "trend_note": "Applied the user-selected candid food-court reaction format: one exaggerated human action, visible bystanders, rough iPhone framing, and a single direct overlay.",
+      "trend_evidence_type": "format observation from user-provided public Reel reference; no external clip or wording copied"
     }
   ]
 }
