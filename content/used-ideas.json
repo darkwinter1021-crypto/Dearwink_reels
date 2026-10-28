@@ -14,7 +14,8 @@
     "cutting corners",
     "laughing for the buffet",
     "needed some space",
-    "wanted a big popcorn"
+    "wanted a big popcorn",
+    "balling today"
   ],
   "posts": [
     {
@@ -101,6 +102,16 @@
       "instagram_media_id": "18078774716721074",
       "trend_note": "Retained the original single-visual-contradiction phone-photo format: a public setting, one literal interpretation, one baffled reaction, and an immediately readable outlined overlay.",
       "trend_evidence_type": "fresh public multi-source scan; no independently corroborated 24–48 hour breakout adopted"
+    },
+    {
+      "concept": "balling today",
+      "overlay": "bro said he was balling today 😭🥀",
+      "posted_at": "2026-10-27T20:01:43+05:30",
+      "caption": "bro said he was balling today 😭🥀\n\nwe thought he meant he was finally having a good game. apparently he meant becoming the ball and waiting for someone to throw him down lane seven 🎳\n\nhis friend brought a normal bowling ball and now has to explain why the lanes have acquired a very smug new obstacle. he looks way too proud of this plan 😭\n\nfictional AI-made scenario — no real bowling ball was given a Dearwink roommate 🎳 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793111913/dearwink_reels/t08bxgm7da9vqpytwomz.mp4",
+      "instagram_media_id": "17906119395351690",
+      "trend_note": "Selected with actual account performance as a directional test signal: first-frame emotional reaction, oversized physical payoff, rough public iPhone framing, and one short overlay. At check time: i am NOT that funny had 1,650 plays, 27 likes, 2 saves; working from home had 1,808 plays, 14 likes, 4 reshares; skipping class had 1,443 plays, 26 likes, 3 reshares.",
+      "trend_evidence_type": "fresh multi-source public scan; no independently corroborated 24–48-hour breakout adopted; live account metrics accessed"
     }
   ]
 }
