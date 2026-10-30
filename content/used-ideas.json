@@ -16,7 +16,8 @@
     "needed some space",
     "wanted a big popcorn",
     "balling today",
-    "hanging out"
+    "hanging out",
+    "long assignment"
   ],
   "posts": [
     {
@@ -123,6 +124,16 @@
       "instagram_media_id": "18565505902079851",
       "trend_note": "Fresh public scan informed only the abstract school-relatability mechanic: a single immediate physical visual contradiction, one visible reaction, and concise on-photo text. No specific 24–48-hour breakout was independently corroborated or copied.",
       "trend_evidence_type": "fresh Firecrawl, Exa, Parallel Search, and public Instagram discovery scan; Openhandle used for discovery only, not performance data"
+    },
+    {
+      "concept": "long assignment",
+      "overlay": "bro said the assignment was long 😭🥀",
+      "posted_at": "2026-10-30T20:04:15+05:30",
+      "caption": "bro said the assignment was long 😭🥀\n\nwe thought he meant it had a few extra questions. apparently he meant it needed its own zip code and a hallway permit 📄\n\nhis friend is watching him drag the entire academic year past the lockers like this is a completely normal way to submit homework. the paper is somehow still going 😭\n\nfictional AI-made scenario — no real assignments were stretched through a school hallway 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793371215/dearwink_reels/iv3ytnm6je5r2xqhru6f.mp4",
+      "instagram_media_id": "17896455126426546",
+      "trend_note": "Fresh public scan informed only the abstract school-relatability mechanic: a single instantly understandable oversized physical payoff, one baffled reaction, rough phone framing, and one concise on-photo line. No specific 24–48-hour breakout was independently corroborated or copied.",
+      "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data was used only for discovery, not performance metrics"
     }
   ]
 }
