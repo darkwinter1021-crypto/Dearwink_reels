@@ -19,7 +19,8 @@
     "hanging out",
     "long assignment",
     "under the weather",
-    "booked"
+    "booked",
+    "had to present"
   ],
   "posts": [
     {
@@ -156,6 +157,16 @@
       "instagram_media_id": "18438522814183957",
       "trend_note": "Fresh public scan informed only the abstract familiar-setup plus immediate-reaction mechanic: a normal school setting, one oversized literal physical payoff, rough phone framing, and concise on-photo text. No specific 24–48-hour breakout was independently corroborated or copied.",
       "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data was used only for discovery, not performance metrics"
+    },
+    {
+      "concept": "had to present",
+      "overlay": "bro said he had to present 😭🥀",
+      "posted_at": "2026-10-31T19:56:36+05:30",
+      "caption": "bro said he had to present 😭🥀\n\nwe thought he meant standing in front of the class with slides. apparently he brought a gift box large enough to need its own desk 🎁\n\nthe whole room is waiting for a history presentation while he is trying to fit wrapping paper through the aisle like this is completely normal school equipment 😭\n\nfictional AI-made scenario — no classroom presentations were replaced with giant presents 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793456955/dearwink_reels/mrvrnurldoqfyua6w1qv.mp4",
+      "instagram_media_id": "18132534241742121",
+      "trend_note": "Fresh public scan informed only abstract mechanics: a normal classroom, a single immediate physical literal payoff, one baffled reaction, raw phone framing, and one concise overlay. No specific 24–48-hour breakout was independently corroborated or copied.",
+      "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data used only for discovery, not performance metrics"
     }
   ]
 }
