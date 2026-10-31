@@ -18,7 +18,8 @@
     "balling today",
     "hanging out",
     "long assignment",
-    "under the weather"
+    "under the weather",
+    "booked"
   ],
   "posts": [
     {
@@ -145,6 +146,16 @@
       "instagram_media_id": "18082639067381181",
       "trend_note": "Fresh public scan informed only the abstract pattern: an immediate literal visual payoff in a normal school setting, one baffled reaction, rough phone framing, and a single concise on-photo line. No specific 24–48-hour breakout was independently corroborated or copied.",
       "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data used only for discovery, not performance metrics"
+    },
+    {
+      "concept": "booked",
+      "overlay": "bro said he was booked 😭🥀",
+      "posted_at": "2026-10-31T13:56:52+05:30",
+      "caption": "bro said he was booked 😭🥀\n\nwe thought he meant he had plans after school. apparently two library books claimed him first and now he is somehow part of the reading list 📚\n\nhis friend came to study and immediately had to process why the reference section has started trapping students. he looks like this happens every Tuesday 😭\n\nfictional AI-made scenario — no library books actually reserved a Dearwink student 📖 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793435396/dearwink_reels/p5xk4p8znbg24zm6lf1u.mp4",
+      "instagram_media_id": "18438522814183957",
+      "trend_note": "Fresh public scan informed only the abstract familiar-setup plus immediate-reaction mechanic: a normal school setting, one oversized literal physical payoff, rough phone framing, and concise on-photo text. No specific 24–48-hour breakout was independently corroborated or copied.",
+      "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data was used only for discovery, not performance metrics"
     }
   ]
 }
