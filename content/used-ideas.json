@@ -17,7 +17,8 @@
     "wanted a big popcorn",
     "balling today",
     "hanging out",
-    "long assignment"
+    "long assignment",
+    "under the weather"
   ],
   "posts": [
     {
@@ -134,6 +135,16 @@
       "instagram_media_id": "17896455126426546",
       "trend_note": "Fresh public scan informed only the abstract school-relatability mechanic: a single instantly understandable oversized physical payoff, one baffled reaction, rough phone framing, and one concise on-photo line. No specific 24–48-hour breakout was independently corroborated or copied.",
       "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data was used only for discovery, not performance metrics"
+    },
+    {
+      "concept": "under the weather",
+      "overlay": "bro said he was under the weather 😭🥀",
+      "posted_at": "2026-10-31T09:02:56+05:30",
+      "caption": "bro said he was under the weather 😭🥀\n\nwe thought he meant he was having a rough day. apparently the forecast took that personally and reserved a whole cloud for his lunch table ☁️\n\neveryone else got fries and a normal cafeteria break. he got precipitation, wet homework, and a front-row seat to the world’s smallest storm 😭\n\nfictional AI-made scenario — no real cafeteria weather systems were involved 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793417794/dearwink_reels/sittvx7sx36ikbjxltnr.mp4",
+      "instagram_media_id": "18082639067381181",
+      "trend_note": "Fresh public scan informed only the abstract pattern: an immediate literal visual payoff in a normal school setting, one baffled reaction, rough phone framing, and a single concise on-photo line. No specific 24–48-hour breakout was independently corroborated or copied.",
+      "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data used only for discovery, not performance metrics"
     }
   ]
 }
