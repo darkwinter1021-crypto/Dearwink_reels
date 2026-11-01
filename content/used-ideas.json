@@ -20,7 +20,8 @@
     "long assignment",
     "under the weather",
     "booked",
-    "had to present"
+    "had to present",
+    "extra credit"
   ],
   "posts": [
     {
@@ -166,6 +167,16 @@
       "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793456955/dearwink_reels/mrvrnurldoqfyua6w1qv.mp4",
       "instagram_media_id": "18132534241742121",
       "trend_note": "Fresh public scan informed only abstract mechanics: a normal classroom, a single immediate physical literal payoff, one baffled reaction, raw phone framing, and one concise overlay. No specific 24–48-hour breakout was independently corroborated or copied.",
+      "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data used only for discovery, not performance metrics"
+    },
+    {
+      "concept": "extra credit",
+      "overlay": "bro said he wanted extra credit 😭🥀",
+      "posted_at": "2026-11-01T08:55:54+05:30",
+      "caption": "bro said he wanted extra credit 😭🥀\n\nwe thought he meant one bonus question. apparently he brought a card big enough to block the whiteboard and called it academic support 💳\n\nthe class is trying to start while he is carrying this thing through the desks like the teacher accepts payment plans for homework. nobody knows what subject this is anymore 😭\n\nfictional AI-made scenario — no real credit cards were accepted for grades 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793503710/dearwink_reels/mhqsxqr9gi7hyercpecc.mp4",
+      "instagram_media_id": "18288039823291991",
+      "trend_note": "Fresh public scan informed only the abstract familiar-school setup, oversized literal physical payoff, one baffled reaction, raw phone framing, and concise on-photo text. No specific 24–48-hour breakout was independently corroborated or copied.",
       "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data used only for discovery, not performance metrics"
     }
   ]
