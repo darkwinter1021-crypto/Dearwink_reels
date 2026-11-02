@@ -21,7 +21,8 @@
     "under the weather",
     "booked",
     "had to present",
-    "extra credit"
+    "extra credit",
+    "raising his hand"
   ],
   "posts": [
     {
@@ -178,6 +179,16 @@
       "instagram_media_id": "18288039823291991",
       "trend_note": "Fresh public scan informed only the abstract familiar-school setup, oversized literal physical payoff, one baffled reaction, raw phone framing, and concise on-photo text. No specific 24–48-hour breakout was independently corroborated or copied.",
       "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle test/synthetic data used only for discovery, not performance metrics"
+    },
+    {
+      "concept": "raising his hand",
+      "overlay": "bro said he was raising his hand 😭🥀",
+      "posted_at": "2026-11-02T20:10:59+05:30",
+      "caption": "bro said he was raising his hand 😭🥀\n\nwe thought he wanted to answer one question. apparently he wanted enough hand to participate for the whole classroom ✋\n\nthe teacher has not even finished asking yet and he is already fighting a foam hand the size of a small car. his friend looks like she is about to transfer schools 😭\n\nfictional AI-made scenario — no real classroom was interrupted by giant participation points 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793630697/dearwink_reels/qoahbrq23qfpiwzfmyop.mp4",
+      "instagram_media_id": "17915444412510670",
+      "trend_note": "Fresh public discovery informed only the abstract familiar-school setup, an immediate oversized literal physical payoff, one baffled reaction, rough phone framing, and concise on-photo text. No specific 24–48-hour breakout was independently corroborated or copied.",
+      "trend_evidence_type": "fresh Firecrawl web scan and Openhandle discovery scan; Openhandle data was used only for discovery, not performance metrics"
     }
   ]
 }
