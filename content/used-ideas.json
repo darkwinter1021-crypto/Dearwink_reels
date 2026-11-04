@@ -26,7 +26,8 @@
     "getting his steps in",
     "taking a test",
     "getting a degree",
-    "joined the school band"
+    "joined the school band",
+    "had a lot on his plate"
   ],
   "posts": [
     {
@@ -233,6 +234,16 @@
       "instagram_media_id": "18093579137234214",
       "trend_note": "Fresh Parallel Search and Search1API discovery informed only abstract mechanics: familiar school setting, concise readable setup, literal physical payoff, one baffled reaction, and rough phone framing. No independently corroborated 24–48-hour breakout was adopted or copied.",
       "trend_evidence_type": "fresh Parallel Search and Search1API public-web scans plus Openhandle discovery; Openhandle test data used only for discovery, not performance metrics"
+    },
+    {
+      "concept": "had a lot on his plate",
+      "overlay": "bro said he had a lot on his plate 😭🥀",
+      "posted_at": "2026-11-04T13:56:00+05:30",
+      "caption": "bro said he had a lot on his plate 😭🥀\n\nwe thought he meant homework, responsibilities, maybe one normal rough week. apparently he meant bringing enough dishes to feed a whole cafeteria 🍽️\n\nhis friend has been holding the tray for three seconds and has already accepted that this will end with somebody explaining physics to the lunch staff. he looks way too proud of the stack 😭\n\nfictional AI-made scenario — no real cafeteria plates were put through this much drama 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793781122/dearwink_reels/scwyunursq47kj6w96bi.mp4",
+      "instagram_media_id": "18089952608701809",
+      "trend_note": "Fresh Firecrawl and Openhandle discovery informed only abstract mechanics: familiar cafeteria setting, direct literal physical payoff, one baffled reaction, rough phone framing, and concise embedded overlay. No independently corroborated 24–48-hour breakout was adopted or copied.",
+      "trend_evidence_type": "fresh Firecrawl public-web scan and Openhandle discovery; Openhandle test data used only for discovery, not performance metrics; vidIQ outlier query was unavailable in this run"
     }
   ]
 }
