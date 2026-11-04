@@ -27,7 +27,8 @@
     "taking a test",
     "getting a degree",
     "joined the school band",
-    "had a lot on his plate"
+    "had a lot on his plate",
+    "on a roll"
   ],
   "posts": [
     {
@@ -244,6 +245,16 @@
       "instagram_media_id": "18089952608701809",
       "trend_note": "Fresh Firecrawl and Openhandle discovery informed only abstract mechanics: familiar cafeteria setting, direct literal physical payoff, one baffled reaction, rough phone framing, and concise embedded overlay. No independently corroborated 24–48-hour breakout was adopted or copied.",
       "trend_evidence_type": "fresh Firecrawl public-web scan and Openhandle discovery; Openhandle test data used only for discovery, not performance metrics; vidIQ outlier query was unavailable in this run"
+    },
+    {
+      "concept": "on a roll",
+      "overlay": "bro said he was on a roll 😭🥀",
+      "posted_at": "2026-11-04T19:55:51+05:30",
+      "caption": "bro said he was on a roll 😭🥀\n\nwe thought he meant he had momentum. apparently he meant finding one cafeteria roll the size of a small car and immediately balancing on it 🥖\n\nhis friend is reaching for him like this is the last sensible decision left in the lunch period. meanwhile he is standing there with the confidence of somebody who absolutely understood the assignment 😭\n\nfictional AI-made scenario — no real school cafeteria bread escaped its tray 🏫 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1793802579/dearwink_reels/fyit5itry28ccviwcax0.mp4",
+      "instagram_media_id": "18041656133848144",
+      "trend_note": "Fresh Firecrawl, Exa, and Openhandle discovery informed only abstract mechanics: familiar school setting, immediate literal physical payoff, one baffled reaction, rough phone framing, and concise embedded overlay. No independently corroborated 24–48-hour breakout was adopted or copied.",
+      "trend_evidence_type": "fresh Firecrawl and Exa public-web scans plus Openhandle Instagram discovery; no qualifying breakout corroborated; Openhandle output used only as discovery, not comparative performance evidence"
     }
   ]
 }
