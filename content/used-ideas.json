@@ -64,7 +64,8 @@
     "locked in",
     "taking a study break",
     "hitting the books",
-    "dodging homework"
+    "dodging homework",
+    "playing it cool"
   ],
   "posts": [
     {
@@ -681,6 +682,16 @@
       "instagram_media_id": "18121727743991489",
       "trend_note": "Fresh Parallel and Olostep public scans supported only broad mechanics: a concise student-relatable hook, a clear physical reaction, raw phone framing, and a baffled nearby reaction. No compatible 24–48-hour breakout had independently corroborated post-level outlier traction, so no creator-specific format was adopted. Windsor account-level Reel metrics remain unavailable because reads are paused under the connected-account limit.",
       "trend_evidence_type": "Fresh Parallel and Olostep public research scan; Windsor Instagram metric pull attempted and blocked by connected-account plan limit."
+    },
+    {
+      "concept": "playing it cool",
+      "overlay": "bro said he was playing it cool 😭🥀",
+      "posted_at": "2026-11-23T17:00:36+05:30",
+      "caption": "bro said he was playing it cool 😭🥀\n\nthe cafeteria fan was already doing its job, but he showed up with an ice pack like lunch had turned into a climate emergency.\n\nhe has the exact face of someone convinced this is the most normal way to survive Tuesday. his friend has clearly decided not to ask questions 😭\n\nthis is a fictional AI-made scene, but the commitment is painfully real 🧊 #dearwink",
+      "cloudinary_url": "https://res.cloudinary.com/qjh0dnin/video/upload/v1795433436/dearwink_reels/raaj8gymlgeua5cisyf9.mp4",
+      "instagram_media_id": "18045307448814649",
+      "trend_note": "Fresh Exa and Firecrawl scan supported the abstract short, reaction-led relatable-school format: one immediate literal action, one baffled reaction, raw public-phone framing, and one concise on-image line. No independently corroborated 24–48-hour breakout met the adoption threshold. Live per-Reel metrics read was unavailable because Windsor paused reads while 3 connected accounts exceed the free-plan allowance of 1.",
+      "trend_evidence_type": "fresh Exa and Firecrawl public scan; no qualifying breakout adopted; Windsor connector metrics access paused"
     }
   ]
 }
